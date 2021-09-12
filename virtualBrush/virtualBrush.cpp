@@ -9,6 +9,7 @@ int main() {
 	Mat img;
 	while (true) {
 		cap.read(img);
+		findColor(img);
 		imshow("cam", img);
 		waitKey(1);
 	}
